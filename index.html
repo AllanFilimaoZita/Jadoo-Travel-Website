@@ -5,29 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jadoo | Travel Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 </head>
 <body>
     <header id="header">
         <div class="container">
-            <div class="flex">
-                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-
-                <nav>
-                    <ul>
-                        <li><a href="#">Destinos</a></li>
-                        <li><a href="#">Hóteis</a></li>
-                        <li><a href="#">Voos</a></li>
-                        <li><a href="#">Reservas</a></li>
-                        <li><a href="#" class="login_btn">Entrar</a></li>
-                    </ul>
-                </nav>
-
-                <div class="btn-cadastrar">
-                    <a href="#"><button>Cadastrar-se</button></a>
-                    <a href="#">PT</a>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
                 </div>
-            </div>
+                <ul class="nav-list">
+                    <li><a href="#">Destinos</a></li>
+                    <li><a href="#">Hóteis</a></li>
+                    <li><a href="#">Voos</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#" class="entrar">Entrar</a></li>
+                    <li><a href="" class="cadastro">Cadastrar-se</a></li>
+                    <li><a href="#" class="translate">PT</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+    <main id="main">
+        <div class="container">
+            <div class="conteudo">
+                <h3>MELHORES DESTINOS AO REDOR DO MUNDO</h3>
+                <h2>
+                    Viage, aproveite e viva uma vida nova e plena</h2>
+                <p>
+                    Construído Wicket mais admirado, faça Barton vaidade em si mesmo. Preferido para esportistas, ele se envolveu ouvindo. Portão do parque vendeu duro para o oeste.
+                </p>
+                <div class="span">
+                    <button class="btn">Saiba mais</button>
+                    <br>
+                    <span class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play-icon lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                    </span>
+                    <span>Assistir Demo</span>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="img/background.png" alt="hero">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
