@@ -111,22 +111,4 @@ p {
 
 /* Estilização da Sessão de Categorias */
 
-.section {
-    padding: 100px 0;    
-}
-
-.main-container {
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    padding: 100px 100px;
-}
-
-.fly {
-    width: 50%;
-}
 /* Fim da Estilização da Sessão de Categorias */
