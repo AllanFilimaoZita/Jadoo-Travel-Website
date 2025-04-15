@@ -1,3 +1,4 @@
+/* Estilização GERAL */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,9 @@ body {
     padding: 20px 80px;
     font-family: 'Poppins', sans-serif;
 }
+/* Fim da Estilização GERAL */
 
+/* Estilização do Cabeçalho */
 .navbar {
     display: flex;
     align-items: center;
@@ -46,6 +49,7 @@ body {
 .translate {
     font-weight: 600;
 }
+/* Fim da Estilização do Cabeçalho */
 
 
 /* Estilização da Sessão da Inicial */
@@ -110,5 +114,54 @@ p {
 /* Fim da Estilização da Sessão da Inicial */
 
 /* Estilização da Sessão de Categorias */
+.servicos {
+    padding: 4rem 2rem;
+}
 
+.titulo-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.titulo-servicos .categoria {
+    font-weight: bold;
+    color: #a1a1a1;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cards-servicos {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    flex: 1 1 calc(25% - 1rem);
+    min-width: 250px;
+    text-align: center;
+}
+
+.card img {
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #12194D;
+}
+
+.card span {
+    font-size: 0.95rem;
+    color: #a1a1a1;
+}
 /* Fim da Estilização da Sessão de Categorias */
