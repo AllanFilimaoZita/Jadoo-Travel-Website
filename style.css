@@ -116,19 +116,20 @@ p {
 /* Estilização da Sessão de Categorias */
 .servicos {
     padding: 4rem 2rem;
+    margin-top: 5rem;
 }
 
 .titulo-servicos {
-    display: flex;
+    text-align: center;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
 }
 
 .titulo-servicos .categoria {
-    font-weight: bold;
-    color: #a1a1a1;
+    font-weight: 600;
+    color: #AEAFB1;
     font-size: 1rem;
     text-transform: uppercase;
 }
@@ -141,8 +142,6 @@ p {
 
 .card {
     background: #ffffff;
-    border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1.2rem;
     flex: 1 1 calc(25% - 1rem);
     min-width: 250px;
