@@ -18,6 +18,7 @@ body {
 .nav-list {
     display: flex;
     align-items: center;
+    margin-left: 500px;
 }
 
 .nav-list li {
@@ -46,7 +47,9 @@ body {
     font-weight: 600;
 }
 
-.container {
+
+/* Estilização da Sessão da Inicial */
+.container-p2 {
     display: flex;
     align-items: center;
 }
@@ -104,3 +107,26 @@ p {
     font-weight: 300;
     padding: 10px 0;
 }
+/* Fim da Estilização da Sessão da Inicial */
+
+/* Estilização da Sessão de Categorias */
+
+.section {
+    padding: 100px 0;    
+}
+
+.main-container {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    padding: 100px 100px;
+}
+
+.fly {
+    width: 50%;
+}
+/* Fim da Estilização da Sessão de Categorias */
