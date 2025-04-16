@@ -34,9 +34,19 @@ body {
 .nav-list li a {
     text-decoration: none;
     color: #a1a1a1;
+    transition: 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #DF6951;
 }
 
 .entrar {
+    color: #101317;
+    transition: 0.3s;
+}
+
+.entrar:hover {
     color: #101317;
 }
 
@@ -46,10 +56,23 @@ body {
     padding: 8px 16px;
     border-radius: 5px;
     border: 1px solid #212832;
+    transition: 0.3s;
+}
+
+.cadastro:hover {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
 }
 
 .translate {
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.translate:hover {
+    color: #101317;
+    font-weight: 800;
 }
 /* Fim da Estilização do Cabeçalho */
 
@@ -86,6 +109,12 @@ body {
     justify-content: center;
     margin-right: 15px;
     font-size: 12px;
+    transition: 0.3s;
+}
+
+.play:hover {
+    width: 50px;
+    height: 50px;
 }
 
 .span {
@@ -93,6 +122,11 @@ body {
     align-items: center;
     padding: 10px 0;
     gap: 10px;
+}
+
+.span a {
+    text-decoration: none;
+    color: #808080;
 }
 
 h3 {
