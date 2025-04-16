@@ -134,6 +134,10 @@ p {
     text-transform: uppercase;
 }
 
+.titulo-servicos h2 {
+    font-size: 2rem;
+}
+
 .cards-servicos {
     display: flex;
     gap: 1.5rem;
@@ -164,3 +168,68 @@ p {
     color: #a1a1a1;
 }
 /* Fim da Estilização da Sessão de Categorias */
+
+/* Estilização da Sessão de Destinos */
+.mais-vendidos {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.titulo-mais-vendidos {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.titulo-mais-vendidos .categoria {
+    font-weight: 600;
+    color: #AEAFB1;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.titulo-mais-vendidos h2 {
+    font-size: 2rem;
+}
+
+.cards-destinos {
+    display: flex;
+    justify-content: center;
+}
+
+.card-destino {
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 1.5rem);
+    min-width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.card-destino img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.info-topo {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.nome-destino {
+    font-size: 0.95rem;
+    color: #a1a1a1;
+}
+
+.dias {
+    padding: 1rem;
+}
+
+/* Fim da Estilização da Sessão de Destinos */
