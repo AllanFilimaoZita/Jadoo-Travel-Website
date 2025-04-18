@@ -8,7 +8,7 @@
 }
 
 body {
-    padding: 20px 80px;
+    padding: 4rem 4rem;
     font-family: 'Poppins', sans-serif;
 }
 /* Fim da Estilização GERAL */
@@ -151,7 +151,7 @@ p {
 
 /* Estilização da Sessão de Categorias */
 .servicos {
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
     margin-top: 5rem;
 }
 
@@ -207,7 +207,7 @@ p {
 
 /* Estilização da Sessão de Destinos */
 .mais-vendidos {
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
     background-color: #ffffff;
 }
 
@@ -229,6 +229,7 @@ p {
 
 .cards-destinos {
     display: flex;
+    gap: 25px;
     justify-content: center;
 }
 
@@ -367,3 +368,39 @@ p {
     color: #12194D;
 }
 /* Fim da Estilização da Imagem da Sessão de Reservas */
+
+/* Estilização da Sessão de Depoimentos */
+.depoimentos {
+    padding: 4rem 4rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    margin-bottom: 35px;
+}
+
+.conteudo-depoimento {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testemunho {
+    padding: 2rem;
+    width: 500px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.testemunho .descricao {
+    font-style: italic;
+    color: #808080;
+    margin-bottom: 15px;
+}
+
+.testemunho h4 {
+    font-weight: normal;
+    color: #12194D;
+}
+/* Fim da Estilização da Sessão de Depoimentos */
