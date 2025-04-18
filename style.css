@@ -404,3 +404,17 @@ p {
     color: #12194D;
 }
 /* Fim da Estilização da Sessão de Depoimentos */
+
+/* Estilização da Sessão de Parceiros */
+.logos-parceiros {
+    margin: 100px 0;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-parceiros img {
+    width: 100px;
+}
+/* Fim da Estilização da Sessão de Parceiros */
