@@ -418,3 +418,57 @@ p {
     width: 100px;
 }
 /* Fim da Estilização da Sessão de Parceiros */
+
+/* Estilização da Sessão de Newsletter */
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 4rem;
+    border-radius: 20px;
+    background-color: #DFD7F9;
+}
+
+.h4 {
+    width: 500px;
+    align-items: center;
+}
+
+.newsletter .newsletter-h5 {
+    color: #5E6381;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.input-conteudo {
+    position: relative;
+    width: 300px;
+}
+
+.input-conteudo input {
+    width: 100%;
+    padding: 10px 45px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-conteudo button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.input-conteudo button:hover {
+    background-color: #DF6951;
+}
+/* Fim da Estilização da Sessão de Newsletter */
+
+/* Estilização do Footer */
