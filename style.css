@@ -151,8 +151,7 @@ p {
 
 /* Estilização da Sessão de Categorias */
 .servicos {
-    padding: 4rem 4rem;
-    margin-top: 5rem;
+    padding: 15rem 0 0 0;
 }
 
 .titulo-servicos {
@@ -207,7 +206,7 @@ p {
 
 /* Estilização da Sessão de Destinos */
 .mais-vendidos {
-    padding: 4rem 4rem;
+    padding: 10rem 0 0 0;
     background-color: #ffffff;
 }
 
@@ -273,7 +272,7 @@ p {
 
 /* Estilização da Sessão de Reservas */
 .passos-reserva {
-    padding: 4rem 4rem;
+    padding: 10rem 0 0 0;
 }
 
 .passos-reserva .conteudo-reserva {
