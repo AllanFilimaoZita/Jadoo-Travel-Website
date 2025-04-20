@@ -471,3 +471,43 @@ p {
 /* Fim da Estilização da Sessão de Newsletter */
 
 /* Estilização do Footer */
+footer {
+    padding: 10rem 0 0 0;
+}
+
+footer .footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-img {
+    width: 250px;
+    margin-right: 424px;
+}
+
+.footer-container .empresa {
+    width: 100px;
+}
+
+.footer-ul {
+    width: 200px;
+}
+
+.footer-container ul li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.footer-container ul li a {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-container ul li p {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 300;
+}
+/* Fim de Estilização do Footer */
