@@ -1,196 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-MZ">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jadoo - As melhores viagens para Moçambique e o mundo. Reserve já a sua aventura!">
-    <title>Jadoo | Agência de Viagens</title>
+    <meta name="description" content="Jadoo Travel - Explore as melhores viagens nacionais com experiências inesquecíveis. Reserve agora!">
+    <meta name="keywords" content="viagens nacionais, turismo, Jadoo Travel, destinos, pacotes de viagem">
+    <meta name="author" content="Allan Filimão Zita">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Jadoo Travel - Viagens Nacionais">
+    <meta property="og:description" content="Descubra destinos incríveis com a Jadoo Travel. Planeje sua próxima aventura nacional!">
+    <meta property="og:image" content="./assets/img/og-image.jpg">
+    <meta property="og:url" content="https://www.jadootravel.com">
+    <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Volkhov:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+    <!-- CSS para performance -->
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <title>Jadoo Travel - Viagens Nacionais</title>
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="assets/svg/logo.svg" alt="Jadoo">
-                </a>
-                <ul class="nav-menu">
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Hotéis</a></li>
-                    <li><a href="#">Voos</a></li>
-                    <li><a href="#">Reservas</a></li>
-                    <li><a href="#" class="login">Entrar</a></li>
-                    <li><a href="#" class="signup">Cadastrar-se</a></li>
-                    <li class="lang">PT <i class="fas fa-chevron-down"></i></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <header id="header" class="header">
+        <div id="container" class="container">
+            <nav>
+                <div id="logo" class="logo">
+                    <a href="index.html"><img src="assets/svg/logo.svg" alt="Jadoo Logo"></a>
                 </div>
+                <ul>
+                    <li class="hideMobile"><a href="#">Destinations</a></li>
+                    <li class="hideMobile"><a href="#">Hotels</a></li>
+                    <li class="hideMobile"><a href="#">Flights</a></li>
+                    <li class="hideMobile"><a href="#">Reservations</a></li>
+                    <li class="hideMobile"><a class="entrar" href="#">Sign In</a></li>
+                    <li class="hideMobile"><button><a href="">Sing Up</a></button></li>
+                    <li class="hideMobile"><a href="#">PT</a></li>
+                    <li onclick=showSidebar()><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+                    </a></li>
+                </ul>
+                
+                <ul id="sidebar" class="sidebar">
+                    <li onclick=hideSidebar()><a href="#">
+                        <i class="ri-close-large-fill"></i>
+                    </a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a class="entrar" href="#">Sign In</a></li>
+                    <li><button><a href="">Sing Up</a></button></li>
+                    <li><a href="#">PT</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <p class="subtitle">Melhores Destinos ao Redor do Mundo</p>
-                <h1>Viaje, aproveite e viva uma vida nova e plena</h1>
-                <p class="desc">Construído Wicket mais admirado, faça Barton vaidade em si mesmo. Preferido para esportistas, ele se envolveu ouvindo. Portão do parque vendeu duro para o oeste.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn-primary">Saiba mais</a>
-                    <a href="#" class="btn-demo">
-                        <span class="play-circle"></span> Assistir Demo
-                    </a>
+    <main id="main" class="main">
+        <div id="main-container" class="main-container">
+            <div id="main-text" class="main-text">
+                <span>Melhores Destinos ao Redor do Mundo</span>
+                <h1>Viaje, aproveite e viva uma nova vida e plena</h1>
+                <p>
+                    Construído o Wicket mais admirado, faça Barton vaidade em si mesmo. Preferido para esportistas, ele se envolveu ouvindo.
+                    Portão do parque vendeu duro para o oeste
+                </p>
+                <div class="assets btn-groug">
+                    <button class="btn-primary"><a href="#">Saiba Mais</a></button>
+                    <button class="btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.3944 12.0001L10 7.7371V16.263L16.3944 12.0001ZM19.376 12.4161L8.77735 19.4818C8.54759 19.635 8.23715 19.5729 8.08397 19.3432C8.02922 19.261 8 19.1645 8 19.0658V4.93433C8 4.65818 8.22386 4.43433 8.5 4.43433C8.59871 4.43433 8.69522 4.46355 8.77735 4.5183L19.376 11.584C19.6057 11.7372 19.6678 12.0477 19.5146 12.2774C19.478 12.3323 19.4309 12.3795 19.376 12.4161Z"></path></svg></button>
+                    <a href="#">Assistir Demo</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/img/background.png" alt="Mulher viajante">
-                <div class="decoration-plane"></div>
-                <div class="decoration-plane small"></div>
-            </div>
-        </div>
-    </section>
 
-    <!-- SERVICES -->
-    <section class="services">
-        <div class="container">
-            <p class="section-subtitle">CATEGORIAS</p>
-            <h2>Oferecemos os Melhores Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="assets/svg/satelite.svg" alt="Clima Calculado">
-                    <h3>Clima Calculado</h3>
-                    <p>Construído Wicket mais admirado, faça Barton vaidade em si mesmo.</p>
-                </div>
-                <div class="service-card active">
-                    <img src="assets/img/fly.png" alt="Melhores Voos">
-                    <h3>Melhores Voos</h3>
-                    <p>Envolvido ouvindo. Portão do parque vendeu duro para o oeste.</p>
-                    <div class="card-decoration"></div>
-                </div>
-                <div class="service-card">
-                    <img src="assets/img/mic.png" alt="Eventos Locais">
-                    <h3>Eventos Locais</h3>
-                    <p>Barton vaidade em si mesmo. Preferido para homens, ele se envolveu ouvindo.</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/svg/gear.svg" alt="Personalização">
-                    <h3>Personalização</h3>
-                    <p>Oferecemos serviços de aviação terceirizado para clientes militares</p>
-                </div>
+            <div id="content2" class="content2">
+                <img src="assets/img/background.png" alt="Jadoo Travel Background">
             </div>
         </div>
+    </main>
+
+    <section id="category" class="category">
+        div.
     </section>
 
-    <!-- TOP DESTINATIONS -->
-    <section class="destinations">
-        <div class="container">
-            <p class="section-subtitle">MAIS VENDIDOS</p>
-            <h2>Principais Destinos</h2>
-            <div class="destinations-grid">
-                <div class="dest-card">
-                    <img src="assets/img/ponta-de-ouro.jpg" alt="Ponta de Ouro">
-                    <div class="dest-info">
-                        <div class="dest-top">
-                            <p>Ponta de Ouro, Maputo - Moçambique</p>
-                            <p class="price">14.500.00MZN</p>
-                        </div>
-                        <p class="trip">10 Dias de Viagem</p>
-                    </div>
-                </div>
-                <div class="dest-card">
-                    <img src="assets/img/praia-do-tofo.jpg" alt="Praia do Tofo">
-                    <div class="dest-info">
-                        <div class="dest-top">
-                            <p>Praia do Tofo, Inhambane - Moçambique</p>
-                            <p class="price">25.000.00MZN</p>
-                        </div>
-                        <p class="trip">12 Dias de Viagem</p>
-                    </div>
-                </div>
-                <div class="dest-card">
-                    <img src="assets/img/ponta-mamoli.jpg" alt="Ponta Mamoli">
-                    <div class="dest-info">
-                        <div class="dest-top">
-                            <p>Ponta Mamoli, Maputo - Moçambique</p>
-                            <p class="price">15.000.00MZN</p>
-                        </div>
-                        <p class="trip">25 Dias de Viagem</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- BOOKING STEPS -->
-    <section class="booking">
-        <div class="container">
-            <div class="booking-content">
-                <div class="booking-text">
-                    <p class="section-subtitle">FÁCIL E RÁPIDO</p>
-                    <h2>Reserve a sua Próxima Viagem em 3 Passos Fáceis</h2>
-                    <div class="steps">
-                        <div class="step">
-                            <div class="step-icon">1</div>
-                            <div>
-                                <h4>Escolha o Destino</h4>
-                                <p>Escolha entre uma variedade de destinos incríveis ao redor do mundo...</p>
-                            </div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">2</div>
-                            <div>
-                                <h4>Faça o Pagamento</h4>
-                                <p>Utilize o pagamento de forma segura e conveniente...</p>
-                            </div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">3</div>
-                            <div>
-                                <h4>Chegue ao Aeroporto na Data Selecionada</h4>
-                                <p>Chegue ao aeroporto na data selecionada...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="booking-card">
-                    <img src="assets/img/macaneta.jpg" alt="Macaneta">
-                    <div class="card-content">
-                        <h4>Viagem para a Macaneta</h4>
-                        <p>14-29 Junho | por Allan Zita</p>
-                        <div class="card-icons">
-                            <i class="far fa-building"></i>
-                            <i class="fas fa-map-marked-alt"></i>
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <div class="going">
-                            <span>60 pessoas indo</span>
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS, PARTNERS, NEWSLETTER, FOOTER -->
-    <!-- (mantive tudo igual ao original, só com classes corretas para o CSS funcionar) -->
-
-    <script>
-        // Menu mobile
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-menu').classList.toggle('active');
-            document.querySelector('.hamburger').classList.toggle('active');
-        });
-    </script>
+    <script src="./src/js/script.js" defer></script>
 </body>
 </html>
